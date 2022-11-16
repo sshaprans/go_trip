@@ -294,7 +294,7 @@ body{
     margin-bottom: 60px;
 }
 .user__avatar{
-    background-color: #FFAA99;
+    background-color: rgba(255, 121, 78, 1);
     border-radius: 50%;
 }
 .--name{
@@ -374,19 +374,22 @@ body{
     font-size: 55px;
     margin-bottom: 60px;
 }
-.subscribe__win{
-    /* max-width: 800px; */
+.subscribe__form{
     display: flex;
     justify-content: center;
     align-items:center;
-    column-gap: 175px;
     border-radius: 35px;
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4;
 }
-.subscribe__email{
+.subscribe__input{
     font-weight: 500;
     font-size: 24px;
     padding: 46px;
+
+}
+.subscribe__input::placeholder{
+    font-weight: 500;
+    font-size: 24px;
     color: rgba(15, 31, 28, 0.5);
 
 }
@@ -421,6 +424,11 @@ body{
 .footer a:hover::after{
     content: none;
 }
+.footer .nav__login{
+    display: flex;
+    column-gap: 66px;
+}
+
 .footer .nav__btn{
     color:#fff;
 
