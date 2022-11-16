@@ -226,6 +226,7 @@ body{
 /* slider */
 .slider{
     position: relative;
+    height: 456px;
 }
 .slider__item{
     margin-top: 27px;
