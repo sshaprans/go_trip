@@ -39,7 +39,7 @@ body{
     position: relative;
     min-height: 940px;
     padding-top: 44px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
 }
 .header a{
@@ -50,10 +50,11 @@ body{
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
     height: 96px;
     width: 100%;
 
+    z-index: 2;
     background-image: url(../img/header/header_vector.svg);
     background-size: 100%;
 }
@@ -79,6 +80,15 @@ body{
     width: 841px;
     height: 844px;
     max-width: unset;
+}
+.header__img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -145px;
+    width: 830px;
+    height: 622px;
+    background-image: url(../img/header/header-elements.svg)
 }
 /* nav */
 .nav{
