@@ -4,7 +4,10 @@
 :root{
     --container-width: 1270px;
     --container-padding: 15px;
+
     --secondary: rgba(15, 31, 28, 0.5);
+    --btn-hover: rgb(128, 43, 0);
+    --btn-background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
 }
 
 body{
@@ -121,13 +124,13 @@ body{
 .nav__btn{
     display: inline-block;
     padding: 13px 44px;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    background: var(--btn-background);
     border-radius: 100px;
     transition: color 0.3s ease-in;
 
 }
 .nav__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .nav__btn:active{
     position: relative; 
@@ -163,13 +166,13 @@ body{
     font-weight: 600;
     font-size: 25px;
     color: #FEFEFE;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    background: var(--btn-background);
     border-radius: 27px;
     padding: 26px 47px; 
     transition: color 0.3s ease-in;   
 }
 .header__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .header__btn:active{
     position: relative; 
@@ -204,7 +207,7 @@ body{
 .destinations__text{
     font-weight: 500;
     font-size: 25px;
-    color: rgba(15, 31, 28, 0.5);
+    color: var(--secondary);
     margin-bottom: 60px;
 }
 .destinations__btn{
@@ -212,11 +215,12 @@ body{
     font-weight: 600;
     font-size: 20px;
     color: #FEFEFE;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    background: var(--btn-background);
     border-radius: 27px;
+    transition: color 0.3s ease-in;
 }
 .destinations__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .destinations__btn:active{
     position: relative; 
@@ -246,8 +250,7 @@ body{
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
-    /* text-align: center; */
+    background: var(--btn-background);
     display: flex;
     align-items:center;
     position: absolute;
@@ -350,13 +353,16 @@ body{
     margin-bottom: 60px;
 }
 .cta__btn{
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    background: var(--btn-background);
     border-radius: 27px;
     color: #fff;
     padding: 25px 55px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s ease-in;
 }
 .cta__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .cta__btn:active{
     position: relative; 
@@ -396,14 +402,15 @@ body{
 .subscribe__btn{
     margin: 12px 15px;
     padding: 34px 86px;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    background: var(--btn-background);
     font-weight: 600;
     font-size: 25px;
     color:#fff;
     border-radius: 35px;
+    transition: color 0.3s ease-in;
 }
 .subscribe__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .subscribe__btn:active{
     position: relative; 
@@ -434,7 +441,7 @@ body{
 
 }
 .footer .nav__btn:hover{
-    color: rgb(128, 43, 0);
+    color: var(--btn-hover);
 }
 .footer .nav__btn:active{
     position: relative; 
