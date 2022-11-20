@@ -628,6 +628,10 @@ body{
     
 }
 @media (max-width: 850px){
+    .owl-item{
+        display: flex;
+        justify-content: center;
+    }
     .header{
         min-height: unset;
     }
@@ -797,7 +801,8 @@ body{
         padding: 12px;
     }
     .subscribe__input::placeholder{
-        font-size: 18px;
+        text-align: center;
+        font-size: 15px;
     }
     .subscribe__btn {
         margin: 8px 8px;
@@ -829,6 +834,7 @@ body{
 }
 
 @media(max-width: 450px){
+
     
     .nav--mobile .nav__toggle {
         top: 15px;
@@ -840,14 +846,32 @@ body{
     .nav--mobile .nav__login {
         row-gap: 15px;
     }
+    .cta__text{
+        font-size: 15px;
+    }
     .cta__right img,
     .cta__left img{
         width: 50%;
     }
-    .cta__right{
-        top: 3px;
+    .cta__title{
+        font-size: 20px;
     }
-    .cta__left{
-        left: 3px;
+    .subscribe__form{
+        flex-direction: column;
+        row-gap: 5px;
+        padding: 10px 0;
+    }
+    .subscribe__input {
+        font-weight: 500;
+        font-size: 13px;
+        padding: 10px 5px;
+        margin: 5px 0;
+        background-color:rgba(229, 229, 229, 0.5);
+        border-radius: 12px
+    }
+    .subscribe__btn {
+        margin: 0 0 10px 0;
+        padding: 10px 30px;
+        border-radius: 12px;
     }
 }
